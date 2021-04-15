@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-
 class User {
   final String image, displayName, phone, email;
   final int age, id;
@@ -12,4 +10,3 @@ class User {
     this.age
   });
 }
-
