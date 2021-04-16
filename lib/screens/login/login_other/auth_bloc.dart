@@ -4,8 +4,6 @@ import 'package:google_sign_in/google_sign_in.dart';
 class AuthBloc {
   final authService = AuthService();
   final googleSignin = GoogleSignIn(
-      clientId:
-          '543534621240-trm57foovp0pra03a2s0k6o1d6pspsbp.apps.googleusercontent.com',
       scopes: [
         'email',
         'https://www.googleapis.com/auth/contacts.readonly',
