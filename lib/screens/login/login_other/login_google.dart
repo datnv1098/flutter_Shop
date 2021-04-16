@@ -22,6 +22,7 @@ class _GoogleSigInState extends State<GoogleSigIn> {
       if (user != null) {
         print('$user');
         Get.toNamed('/home');
+        authBloc.logout();
       }
     });
     super.initState();

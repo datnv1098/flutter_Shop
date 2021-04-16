@@ -1,9 +1,11 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 class Product {
   final String image, title, description;
   final int price, size, id;
   final Color color;
+
   Product({
     this.id,
     this.image,
@@ -69,3 +71,31 @@ List<Product> products = [
 
 String dummyText =
     "Lorem Ipsum has been the industry's standard dummy text ever since. When an unknown printer took a galley.";
+
+// class ProductManager {
+//   final CollectionReference userProfile =
+//   FirebaseFirestore.instance.collection('users');
+//
+//   Future<void> createProduct(
+//       int id, String displayName, String email, String password) {
+//     return userProfile.add({
+//       'id': id,
+//       'displayName': displayName,
+//       'email': email,
+//       'password': password,
+//     });
+//   }
+//
+//   // ignore: missing_return
+//   Future<void> getListProduct() {
+//     try {
+//       return userProfile.get().then((querySnapshot) {
+//         querySnapshot.docs.forEach((document) {
+//           print(document.reference);
+//         });
+//       });
+//     } catch (e) {
+//       print(e.toString());
+//     }
+//   }
+// }
