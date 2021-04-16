@@ -23,7 +23,7 @@ class LoginScreen extends StatelessWidget {
 
   Future<String> _loginOther(LoginData data) {
     return Future.delayed(loginTime).then((_) {
-
+      Get.toNamed('/auth/google');
       return null;
     });
   }
