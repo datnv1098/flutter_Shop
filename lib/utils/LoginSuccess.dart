@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:shop_app/controllers/Auth.js.dart';
-import 'package:shop_app/controllers/User.js.dart';
+import 'package:shop_app/controllers/Auth.dart';
+import 'package:shop_app/controllers/User.dart';
 import 'package:shop_app/screens/home/home_screen.dart';
 import 'package:shop_app/screens/login/login_screen.dart';
 

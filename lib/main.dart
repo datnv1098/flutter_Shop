@@ -1,10 +1,9 @@
-import 'dart:async';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:shop_app/constants.dart';
-import 'package:shop_app/controllers/Auth.js.dart';
+import 'package:shop_app/controllers/Auth.dart';
 import 'package:shop_app/screens/home/home_screen.dart';
 import 'package:shop_app/screens/login/login_other/auth_bloc.dart';
 import 'package:shop_app/screens/login/login_other/login_google.dart';

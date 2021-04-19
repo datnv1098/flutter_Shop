@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
-import 'package:shop_app/controllers/User.js.dart';
-import 'package:shop_app/models/Database.js.dart';
+import 'package:shop_app/controllers/User.dart';
+import 'package:shop_app/models/Database.dart';
 import 'package:shop_app/models/User.dart';
 
 class AuthController extends GetxController {
