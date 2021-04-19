@@ -5,7 +5,7 @@ import 'package:shop_app/controllers/User.js.dart';
 import 'package:shop_app/screens/home/home_screen.dart';
 import 'package:shop_app/screens/login/login_screen.dart';
 
-class Root extends GetWidget<AuthController> {
+class CheckLogin extends GetWidget<AuthController> {
   @override
   Widget build(BuildContext context) {
     return GetX(
@@ -14,8 +14,10 @@ class Root extends GetWidget<AuthController> {
       },
       builder: (_) {
         if (Get.find<AuthController>().user?.uid != null) {
+          print("User Ok !");
           return HomeScreen();
         } else {
+          print("User Ok !");
           return LoginScreen();
         }
       },
