@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:shop_app/constants.dart';
+import 'package:shop_app/controllers/Auth.js.dart';
 import 'package:shop_app/screens/home/home_screen.dart';
 import 'package:shop_app/screens/login/login_other/auth_bloc.dart';
 import 'package:shop_app/screens/login/login_other/login_google.dart';
@@ -30,10 +31,17 @@ class MyApp extends StatelessWidget {
           initialRoute: '/home',
           getPages: [
             GetPage(name: '/home', page: () => HomeScreen()),
-            GetPage(name: '/login', page: () => LoginScreen()),
+            GetPage(name: '/login', page: () => LoginScreen(), binding: AuthBinding()),
             GetPage(name: '/auth/google', page: () => GoogleSigIn()),
           ],
           // home: HomeScreen(),
         ));
+  }
+}
+
+class AuthBinding implements  Bindings {
+  @override
+  void dependencies() {
+    Get.put<AuthController>(AuthController(), permanent: true);
   }
 }
